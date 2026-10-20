@@ -1,0 +1,48 @@
+{
+  "model_name": "Original Lorentz-model Hyperbolic GAT",
+  "architecture": "original_lorentz_hyperbolic_gat",
+  "threshold": 0.7743682265281677,
+  "threshold_selection": "Selected on labelled validation timesteps 35-41 during training",
+  "validation_metrics": {
+    "threshold": 0.7743682265281677,
+    "n_evaluated": 7829,
+    "illicit_count": 675,
+    "predicted_illicit_count": 1108,
+    "precision_illicit": 0.2933212996389892,
+    "recall_illicit": 0.48148148148148145,
+    "f1_illicit": 0.3645541222658441,
+    "pr_auc_illicit": 0.2793750074175714,
+    "roc_auc_illicit": 0.7623277317015087
+  },
+  "test_timestep_range": [
+    42,
+    49
+  ],
+  "test_metrics_at_validation_threshold": {
+    "threshold": 0.7743682265281677,
+    "n_evaluated": 8841,
+    "illicit_count": 408,
+    "predicted_illicit_count": 1464,
+    "precision_illicit": 0.0976775956284153,
+    "recall_illicit": 0.35049019607843135,
+    "f1_illicit": 0.1527777777777778,
+    "pr_auc_illicit": 0.10362705627908764,
+    "roc_auc_illicit": 0.743951894169265
+  },
+  "test_metrics_at_0_5": {
+    "threshold": 0.5,
+    "n_evaluated": 8841,
+    "illicit_count": 408,
+    "predicted_illicit_count": 8841,
+    "precision_illicit": 0.04614862572107228,
+    "recall_illicit": 1.0,
+    "f1_illicit": 0.08822575413558223,
+    "pr_auc_illicit": 0.10362705627908764,
+    "roc_auc_illicit": 0.743951894169265
+  },
+  "n_nodes_exported": 203769,
+  "n_edges_used": 234355,
+  "score_min": 0.7098880410194397,
+  "score_max": 0.7795312404632568,
+  "evaluation_note": "All graph edges used for message passing. This is transductive chronological-label evaluation, not strict future-isolated testing. Scores are ranking signals, not calibrated probabilities."
+}
