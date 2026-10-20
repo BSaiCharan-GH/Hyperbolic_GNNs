@@ -15,7 +15,7 @@ class ForensicDetector(nn.Module):
         self.gat1 = HypGAT(in_dim, hidden_dim, self.hyp_ops)
         self.gat2 = HypGAT(hidden_dim, hidden_dim, self.hyp_ops)
 
-        # ✅ FIX: 3D Lorentz → 2D output
+        # Lorentz 3-vector -> two-dimensional Poincare-disk coordinates
         self.embedding_layer = HypLinear(hidden_dim, 3, self.hyp_ops)
 
         self.classifier = nn.Linear(2, 2)
